@@ -9,9 +9,7 @@ for (i = 0; i < arr.length; i++) {
   
     if (arr[i] === 0) {
     totalZero++;
-    } else if (arr[i] === null) {
-    totalZero++;
-     } else if (arr[i] %2 === 0) {
+    } else if (arr[i] %2 === 0) {
     totalEven++;
     } else if (arr[i] > 0) {
     totalOdd++;
@@ -23,3 +21,5 @@ console.log("Всего элементов в массиве - " + arr.length)
 console.log(totalZero + " элементов со значением 0");
 console.log(totalEven + " четных элементов");
 console.log(totalOdd + " нечетных элементов");
+
+// Значения null не нужно было учитывать в качестве нулевых элементов, в задании гооврилось только о 0. Но это не критично, главное, что вы поняли принцип. Всё остальное сделано верно.
