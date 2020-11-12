@@ -3,5 +3,8 @@ myMap.set(1, "Вася");
 myMap.set(2, "Петя");
 myMap.set(3, "Маша");
 
-console.log(myMap.keys());
-console.log(myMap);
+for (let key of myMap.keys()) {
+    console.log(`Ключ - ${key}, значение - ${myMap.get(key)}`);
+}
+
+// Задание выполнено не до конца, по условию нужно было вывести и ключи, и значения массива, у вас выводятся только ключи. Выше исправила на верный вариант
